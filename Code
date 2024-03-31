@@ -1,0 +1,134 @@
+
+package testepoo;
+import java.util.Scanner;
+public class TestePoo {
+
+    public static void main(String[] args) {
+        Scanner entTxt = new Scanner(System.in);
+        Carros c1 = new Carros();
+        
+        Motos m1 = new Motos();
+        
+        System.out.println("Digite a marca da moto");
+        String marcaMoto = entTxt.nextLine();
+        
+        
+        m1.setMarca(marcaMoto);
+        
+        
+        System.out.println("Digite o modelo da moto");
+        String modeloMoto = entTxt.nextLine();
+        
+        m1.setModelo(modeloMoto);
+        
+        System.out.println("Digite o ano de fabricação: ");
+        String anoFab =entTxt.nextLine();
+        
+        m1.setAno(anoFab);
+        
+        System.out.println("Cilindradas: ");
+        String cilindradas =entTxt.nextLine();
+        
+        m1.setCili(cilindradas);
+        
+        
+        
+        
+        
+        
+        System.out.println("_____________________________________");
+        System.out.println("Cadastro de Veículos");
+        System.out.println("veiculo 1");
+        System.out.println("Digite a marca: ");
+        
+        String marca = entTxt.nextLine();
+        c1.setMarca(marca);
+        
+        System.out.println("Digite o Modelo: ");
+        String modelo = entTxt.nextLine();
+        
+        c1.setModelo(modelo);
+        
+        System.out.println("Digite o ano de fabricação: ");
+        String ano =entTxt.nextLine();
+        
+        c1.setAno(ano);
+        
+        
+        
+        System.out.println("_____________________________________");
+        System.out.println("Moto registrada com sucesso!");
+        System.out.println("Dados da Moto: ");
+        System.out.println("marca: " + m1.getMarca());
+        System.out.println("modelo: " + m1.getModelo());
+        System.out.println("Cilindradas: " + m1.getCili());
+        System.out.println("ano: " + m1.getAnoFab());
+        
+        
+        System.out.println("_____________________________________");
+        System.out.println("Dados registrados com sucesso!");
+        System.out.println("Dados do veiculo: ");
+        System.out.println("marca: " + c1.getMarca());
+        System.out.println("modelo: " + c1.getModelo());
+        System.out.println("ano: " + c1.getAnoFab());
+        
+        Carros c2 = new Carros ();
+        System.out.println("____________________________________");
+        System.out.println("Veiculo 2");
+        System.out.println("Digite a marca: ");
+        
+        marca = entTxt.nextLine();
+        c2.setMarca(marca);
+        
+        System.out.println("Digite o Modelo: ");
+        
+        modelo = entTxt.nextLine();
+        c2.setModelo(modelo);
+        
+        System.out.println("Digite o ano de fabricação: ");
+        anoFab = entTxt.nextLine();
+        
+        System.out.println("____________________________________");
+        c2.setAno(anoFab);
+        
+        System.out.println("Dados registrados com sucesso!");
+        System.out.println("Dados do veiculo");
+        System.out.println("marca: " + c2.getMarca());
+        System.out.println("modelo: " + c2.getModelo());
+        System.out.println("ano: " + c2.getAnoFab());
+        
+        System.out.println("_____________________________________");
+        System.out.println("Moto registrada com sucesso!");
+        System.out.println("Dados da Moto: ");
+        System.out.println("marca: " + m1.getMarca());
+        System.out.println("modelo: " + m1.getModelo());
+        System.out.println("Cilindradas: " + m1.getCili());
+        System.out.println("ano: " + m1.getAnoFab());
+        
+
+        System.out.println("____________________________________");
+        
+        System.out.println("Veiculos registrados");
+        System.out.println("Veiculo 1");
+        System.out.println("marca: " + marca);
+        System.out.println("modelo: " + modelo);
+        System.out.println("ano: " + anoFab);
+        
+        System.out.println("____________________________________");
+        System.out.println("Dados registrados com sucesso!");
+        System.out.println("Veiculo 2");
+        System.out.println("marca: " + c1.getMarca());
+        System.out.println("modelo: " + c1.getModelo());
+        System.out.println("ano: " + c1.getAnoFab());
+        
+        System.out.println("____________________________________");
+        System.out.println("Dados do veiculo registrados");
+        System.out.println("marca::" + marca);
+        System.out.println("modelo:" + modelo);
+        System.out.println("ano:" + anoFab);
+        
+        
+    }
+    
+}
+
